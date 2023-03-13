@@ -1,0 +1,14 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	var n2 float64
+	fmt.Print("Qual o peso, em kg? ")
+	fmt.Scan(&n1)
+	fmt.Print("Qual a sua altura, em metros? ")
+	fmt.Scan(&n2)
+	x := n2 * n2
+	fmt.Println("Seu Índice de Massa Corporal é ", n1/x)
+}
