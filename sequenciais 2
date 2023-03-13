@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	fmt.Print("Qual o número? ")
+	fmt.Scan(&n1)
+	fmt.Println("O dobro, triplo e quádruplo desse número é, respectivamente", n1*2, n1*3, n1*4)
+}
