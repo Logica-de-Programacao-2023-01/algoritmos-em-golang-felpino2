@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	fmt.Print("Qual a sua idade? ")
+	fmt.Scan(&n1)
+	fmt.Println("Parabéns! Você viveu, em dias, ", n1*365)
+}
