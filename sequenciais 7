@@ -1,0 +1,10 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 int
+	fmt.Print("Digite um número inteiro: ")
+	fmt.Scan(&n1)
+	fmt.Println("O sucessor e antecessor do seu número são, respectivamente,: ", n1+1, n1-1)
+}
