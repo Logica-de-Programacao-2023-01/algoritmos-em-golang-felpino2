@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	var n2 float64
+	var n3 float64
+	fmt.Print("Escreva o primeiro número ")
+	fmt.Scan(&n1)
+	fmt.Print("Escreva o segundo número ")
+	fmt.Scan(&n2)
+	fmt.Print("Escreva o terceiro número ")
+	fmt.Scan(&n3)
+	const c1 float64 = 5
+	const c2 float64 = 3
+	const c3 float64 = 2
+	fmt.Println("A média ponderada desses números com base 2, 3 e 5, respectivamente é ", ((n1*2)+(n2*3)+(n3*5))/(c1+c2+c3))
+}
