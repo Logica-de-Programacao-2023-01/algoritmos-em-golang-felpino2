@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	fmt.Print("Qual o valor do preço do produto? ")
+	fmt.Scan(&n1)
+	fmt.Println("O valor deste produto com desconto de 10% é ", n1*0.9)
+}
+ou
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	fmt.Print("Qual o valor do preço do produto? ")
+	fmt.Scan(&n1)
+	fmt.Println("O valor deste produto com desconto de 10% é ", n1-(n1*0.1))
+}
