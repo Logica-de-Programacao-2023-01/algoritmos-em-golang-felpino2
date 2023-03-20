@@ -12,8 +12,12 @@ func main() {
 	fmt.Scan(&nada)
 	fmt.Println("Qual a sua altura? ")
 	fmt.Scan(&altura)
-	i := peso/(altura*altura)
-	if i > 30 {
-		fmt.Println("Você está acima do peso. ")
+	i := peso / (altura * altura)
+	if i > 24.9 {
+		fmt.Println("Você está acima do peso ideal. ")
 	} else if i < 18.5 {
+		fmt.Println("Você está abaixo do peso ideal. ")
+	} else {
+		fmt.Println("Você está no peso ideal.")
 	}
+}
