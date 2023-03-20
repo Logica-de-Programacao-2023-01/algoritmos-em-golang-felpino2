@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Print("Escolha um número de 1 a 7 ")
+	var n1 int
+	fmt.Scan(&n1)
+	if n1 == 1 {
+		fmt.Println("Este dia é Domingo ")
+	} else if n1 == 2 {
+		fmt.Println("Este dia é Segunda-feira, meus pêsames ")
+	} else if n1 == 3 {
+		fmt.Println("Este dia é Terça-feira ")
+	} else if n1 == 4 {
+		fmt.Println("Este dia é Quarta-feira, tá quase... ")
+	} else if n1 == 5 {
+		fmt.Println("Este dia é Quinta-feira, tá chegando... ")
+	} else if n1 == 6 {
+		fmt.Println("Este dia é Sexta-feira, graças a Deus ")
+	} else if n1 == 7 {
+		fmt.Println("Este dia é Sábado ")
+	} else {
+		fmt.Println("Não existem dias correspondentes a este número ")
+	}
+}
