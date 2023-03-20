@@ -1,0 +1,12 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Print("Digite um número ")
+	var n1 float64
+	fmt.Scan(&n1)
+	for i := 0; i < 11; i++ {
+		fmt.Println(n1 * float64(i))
+	}
+}
