@@ -8,7 +8,7 @@ func main() {
 	fmt.Scan(&n1)
 	fmt.Println("O valor deste produto com desconto de 10% é ", n1*0.9)
 }
-ou
+// ou
 package main
 
 import "fmt"
