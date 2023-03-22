@@ -16,3 +16,24 @@ func main() {
 		}
 	}
 }
+
+// OU, PARA COMEÇAR DO 1
+
+package main
+
+import "fmt"
+
+func main() {
+	for i := 1; i > 0; i++ {
+		fmt.Println(i)
+		if i == 100 {
+			break
+		} else if i%3 == 0 && i%5 == 0 {
+			fmt.Println("FizzBuzz", i)
+		} else if i%3 == 0 && i%5 != 0 {
+			fmt.Println("Fizz", i)
+		} else if i%3 != 0 && i%5 == 0 {
+			fmt.Println("Buzz", i)
+		}
+	}
+}
