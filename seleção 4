@@ -5,16 +5,20 @@ import "fmt"
 func main() {
 	var peso float64
 	var altura float64
-	var nada string
+	var sexo string
+	var H string
+	var M string
 	fmt.Print("Qual seu peso? ")
 	fmt.Scan(&peso)
-	fmt.Println("Você é homem ou mulher? ")
-	fmt.Scan(&nada)
+	fmt.Println("Você é homem ou mulher? Digite H para Homem e M para Mulher ")
+	fmt.Scan(&sexo)
 	fmt.Println("Qual a sua altura? ")
 	fmt.Scan(&altura)
 	i := peso / (altura * altura)
-	if i > 24.9 {
+	if sexo == H && i > 24.9 {
 		fmt.Println("Você está acima do peso ideal. ")
+	} else if sexo == M && i > 23.9 {
+		fmt.Println("Você está acima do peso ideal ")
 	} else if i < 18.5 {
 		fmt.Println("Você está abaixo do peso ideal. ")
 	} else {
