@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n1 float64
+	fmt.Print("Qual a sua idade? ")
+	fmt.Scan(&n1)
+	switch {
+	case n1 < 9:
+		fmt.Println("Você é mirim ")
+	case n1 >= 10 && n1 <= 13:
+		fmt.Println("Você é infantil ")
+	case n1 >= 14 && n1 <= 17:
+		fmt.Println("Você é juvenil ")
+	case n1 >= 18:
+		fmt.Println("Você é adulto ")
+	}
+}
