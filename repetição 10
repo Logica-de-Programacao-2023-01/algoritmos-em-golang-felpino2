@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var x, maior float64
+	fmt.Println("Digite um número ")
+	fmt.Scan(&x)
+	maior = x
+	for x != 0 {
+		fmt.Println("Digite um número ")
+		fmt.Scan(&x)
+		if x > maior {
+			maior = x
+		} else if x == 0 {
+			fmt.Println("O maior é ", maior)
+		}
+	}
+}
