@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var numero, soma, embaixo float64
+	fmt.Println("Digite um sequência de números e 0 para terminar ")
+	for {
+		fmt.Scan(&numero)
+		if numero == 0 {
+			break
+		}
+		soma += numero
+		embaixo++
+	}
+	if numero == 0 {
+		fmt.Println("A média é ", soma/embaixo)
+	}
+}
